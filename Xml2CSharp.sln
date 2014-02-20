@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0D7176
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xml2CSharp.Web", "Xml2CSharp.Web\Xml2CSharp.Web.csproj", "{0EA43F89-0536-4691-B108-7392E49D2C48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA43F89-0536-4691-B108-7392E49D2C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA43F89-0536-4691-B108-7392E49D2C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA43F89-0536-4691-B108-7392E49D2C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA43F89-0536-4691-B108-7392E49D2C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
