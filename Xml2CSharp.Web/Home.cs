@@ -22,8 +22,14 @@ namespace Xml2CSharp.Web
                 var stringWriter = new StringWriter();
                 classInfoWriter.Write(stringWriter);
 
-                return "<pre>" + stringWriter.ToString() + "</pre>";
+                return View["result", new ConvertResponse { CSharpCode = stringWriter.ToString() }];
             };
         }
+
+    }
+
+    public class ConvertResponse
+    {
+        public string CSharpCode { get; set; }
     }
 }

@@ -80,6 +80,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="index.cshtml" />
+    <Content Include="result.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -89,7 +90,6 @@
     <Content Include="_master.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Convert.cs" />
     <Compile Include="Home.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
