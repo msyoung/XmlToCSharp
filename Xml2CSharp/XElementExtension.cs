@@ -87,7 +87,18 @@ namespace Xml2CSharp
         {
             var count = classes.Count(c => c.XmlName == @class.Name);
             if (count > 0 && !@classes.Contains(@class))
-                @class.Name = @class.Name + (count + 1);
+            {
+                @class.Name = StripBadCharacters(@class) + (count + 1);
+            }
+            else
+            {
+                @class.Name = StripBadCharacters(@class);
+            }
+        }
+
+        private static string StripBadCharacters(Class @class)
+        {
+            return @class.Name.Replace("-", "");
         }
     }
 }

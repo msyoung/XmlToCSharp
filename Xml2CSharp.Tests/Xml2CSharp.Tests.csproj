@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specs\Converter\When_simple_xml_with_empty_node.cs" />
+    <Compile Include="Specs\Converter\When_xml_name_contains_dash.cs" />
     <Compile Include="Specs\Converter\When_xml_had_three_types_with_same_xml_name.cs" />
     <Compile Include="Specs\Converter\When_xml_has_namespaces.cs" />
     <Compile Include="Specs\ConvertExamples\When_converting_examples.cs" />
