@@ -8,7 +8,7 @@ namespace Xml2CSharp
     {
         public static IEnumerable<Class> ExtractClassInfo(this XElement element)
         {
-            var @classes = new List<Class>();
+            var @classes = new HashSet<Class>();
             ElementToClass(element, classes);
             return @classes;
         }
@@ -85,7 +85,7 @@ namespace Xml2CSharp
 
         private static void SafeName(Class @class, IEnumerable<Class> classes)
         {
-            var count = classes.Count(c => c.Name == @class.Name);
+            var count = classes.Count(c => c.XmlName == @class.Name);
             if (count > 0 && !@classes.Contains(@class))
                 @class.Name = @class.Name + (count + 1);
         }
