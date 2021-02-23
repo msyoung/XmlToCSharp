@@ -22,7 +22,7 @@ namespace Xml2CSharp.Web
                 var stringWriter = new StringWriter();
                 classInfoWriter.Write(stringWriter);
 
-                return View["result", new ConvertResponse { CSharpCode = stringWriter.ToString() }];
+                return View["result", new ConvertResponse { XmlInput = xml, CSharpCode = stringWriter.ToString() }];
             };
         }
 
@@ -30,6 +30,7 @@ namespace Xml2CSharp.Web
 
     public class ConvertResponse
     {
+        public string XmlInput { get; set; }
         public string CSharpCode { get; set; }
     }
 }
